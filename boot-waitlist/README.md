@@ -13,7 +13,7 @@ netlify.toml          Netlify config
 
 ## What to swap before launch
 
-- **Brand name** — find/replace `your brand` (appears in `index.html` nav + footer, and the `<title>`).
+- ~~**Brand name**~~ — done: set to **Pardner Boots** (nav, footer, `<title>`, and the `styles.css` header). Use bare "Pardner" only where in-sentence context calls for it.
 - **Hero render** — in `index.html`, replace the `.render-slot` block with `<img src="…" alt="…">` once you have a concept render or sample photo.
 - **Contact email** — the error message in `main.js` (`showError`) references emailing you; add the real address.
 - **Domain** — set in Netlify after deploy.
