@@ -1,7 +1,7 @@
 # Founder Product Brief — v0.3
 ### Kids Anatomical Western Boot
 
-> Changes from v0.2: new anatomical last (never a modified western last); hidden side zip as the primary closure with pull tabs kept as styling; founding-batch size range narrowed to 8C–12C (6C–13C as post-validation expansion); positioning spine and beachhead sharpened; landed-cost target softened to internal-only (not a vendor anchor); outsole tooling reframed from "avoid" to "sequence last."
+> Changes from v0.2: new anatomical last (never a modified western last); inner (medial) side zip, exposed (no flap) as the primary closure with pull tabs kept as styling; founding-batch size range narrowed to 8C–12C (6C–13C as post-validation expansion); positioning spine and beachhead sharpened; landed-cost target softened to internal-only (not a vendor anchor); outsole tooling reframed from "avoid" to "sequence last."
 
 ---
 
@@ -41,7 +41,7 @@ Children's western-style cowboy boot with:
 - Low or zero internal drop
 - Low toe spring
 - Secure heel fit
-- Easy on/off (hidden side zip)
+- Easy on/off (inner (medial) side zip, exposed — no flap)
 - Child-safe materials
 - Compliance-ready construction and documentation
 
@@ -99,7 +99,7 @@ One style · one color · one size range · one outsole · one core stitch patte
 - Unisex children's western boot, founding range 8C–12C, sample size 10C
 - Warm caramel/camel tan leather
 - Short-to-mid shaft height
-- **Hidden inner (medial) side zip** as the functional closure; western pull tab(s) retained as styling + assist
+- **Inner (medial) side zip, exposed (no flap)** as the functional closure; western pull tab(s) retained as styling + assist
 - Simple western stitch pattern
 - Broad anatomical toe shape (intentionally signals design intent — Altra/Birkenstock-adjacent, softened to read western)
 - Low-profile rubber outsole, **zero or near-zero internal drop**, with a visual heel notched into the underside — **slim profile: ≈15 mm total stack as a ceiling, pursue slimmer** (the western heel read comes from notch depth and the heel-breast, not from thickness)

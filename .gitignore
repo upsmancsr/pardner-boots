@@ -1,0 +1,12 @@
+# Environment / secrets
+.env
+.env.*
+
+# Netlify
+.netlify/
+
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store

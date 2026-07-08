@@ -1,7 +1,7 @@
 # Execution Packet — v0.3
 ### Kids Anatomical Western Boot — Developer RFP + Costed Roadmap
 
-> Changes from v0.2: RFP reframed around a **new anatomical last** (never a modified western last) and a **hidden side-zip** closure; the fixed **$30–$40 landed target removed as a vendor anchor** (replaced with an honest-costing ask); the **diagnostic sprint is a standalone paid Phase 1** with everything after it contingent; a **deferred-tooling ask** added for the outsole. Budget restructured into **two tranches** — the $50k is a *validation-through-preorder* budget; **production (tooling + MOQ) is a separate, preorder-funded tranche.** Founding size range narrowed to **8C–12C**; prototype rounds planned at **4–6**; an explicit **outsole-tooling line** added (in the production tranche).
+> Changes from v0.2: RFP reframed around a **new anatomical last** (never a modified western last) and an **inner (medial) side zip, exposed (no flap)** closure; the fixed **$30–$40 landed target removed as a vendor anchor** (replaced with an honest-costing ask); the **diagnostic sprint is a standalone paid Phase 1** with everything after it contingent; a **deferred-tooling ask** added for the outsole. Budget restructured into **two tranches** — the $50k is a *validation-through-preorder* budget; **production (tooling + MOQ) is a separate, preorder-funded tranche.** Founding size range narrowed to **8C–12C**; prototype rounds planned at **4–6**; an explicit **outsole-tooling line** added (in the production tranche).
 
 ---
 
@@ -17,7 +17,7 @@ We're looking for a footwear designer/developer to translate the founder's produ
 
 - **Product:** children's western-style cowboy boot on a new anatomical last.
 - **Founding-batch size range:** US kids **8C–12C** (full range 6C–13C later). **Sample size: 10C.**
-- **Closure:** hidden inner (medial) **side zip** as the functional closure; western pull tabs retained as styling/assist.
+- **Closure:** **inner (medial) side zip, exposed (no flap)** as the functional closure; western pull tabs retained as styling/assist.
 - **Retail:** $118 (founding preorder ~$98), with headroom above $118 if warranted.
 - **Launch:** one style, one color, one outsole, one MVP. **MVP color:** warm caramel/camel tan leather.
 - **Priority features:** anatomical toe box · low/zero internal drop · low toe spring · secure heel fit · easy on/off · child-safe & compliance-ready · premium leather-forward look.
@@ -50,7 +50,7 @@ Define the requirements for a **new anatomical children's last** (or an adaptati
 
 ### Phase 3 — MVP Design Development
 
-Develop the MVP while preserving the founder's creative direction: side/front/back/top views · shaft shape · **hidden side-zip placement** · pull-tab styling · vamp · stitch pattern · anatomical toe direction · **outsole side profile with the notched visual heel** · material/color direction · branding placement.
+Develop the MVP while preserving the founder's creative direction: side/front/back/top views · shaft shape · **inner (medial) side zip, exposed (no flap) — placement** · pull-tab styling · vamp · stitch pattern · anatomical toe direction · **outsole side profile with the notched visual heel** · material/color direction · branding placement.
 
 **Design goal:** classic western language, softened and modern, appropriate for a child's natural foot — western carried by shaft, vamp, stitch, pull tabs, and heel profile, with a proudly anatomical toe.
 
@@ -93,7 +93,7 @@ Children's footwear experience? · Boots / western / **side-zip** footwear? · A
 
 ## Working Assumptions
 
-Kids western-style cowboy boot on a new anatomical last · founding range **8C–12C** (full 6C–13C later), sample **10C** · warm caramel/camel tan leather · hidden side zip · retail **$118** (preorder ~$98, headroom above) · **startup budget $50,000 = validation-through-preorder** · production a separate, preorder-funded tranche · Austin-designed, expert overseas partners · one hero boot.
+Kids western-style cowboy boot on a new anatomical last · founding range **8C–12C** (full 6C–13C later), sample **10C** · warm caramel/camel tan leather · inner (medial) side zip, exposed (no flap) · retail **$118** (preorder ~$98, headroom above) · **startup budget $50,000 = validation-through-preorder** · production a separate, preorder-funded tranche · Austin-designed, expert overseas partners · one hero boot.
 
 **Primary risks to solve, in order:** Will parents pay ~$118? · Can it look western on an anatomical last? · Can the heel stay secure with a wide toe + zero drop (now: does the side zip solve it)? · Can it be made at a landed cost that supports margin? · Can it meet children's-product compliance? · Can the first run stay small enough to avoid overbuying?
 

@@ -1,7 +1,7 @@
 # Technical Fit Brief — v0.3
 ### Kids Anatomical Western Boot
 
-> Changes from v0.2: primary closure is now a hidden inner side zip (pull-on demoted to a styling/assist detail); the zero-drop heel is specified as a notched-underside outsole geometry; last direction is a new anatomical last (never a modified western last); founding size range narrowed to 8C–12C; removable insole upgraded to standard; sample rounds planned at 4–6.
+> Changes from v0.2: primary closure is now an inner (medial) side zip, exposed (no flap) (pull-on demoted to a styling/assist detail); the zero-drop heel is specified as a notched-underside outsole geometry; last direction is a new anatomical last (never a modified western last); founding size range narrowed to 8C–12C; removable insole upgraded to standard; sample rounds planned at 4–6.
 
 ---
 
@@ -85,17 +85,18 @@ Balance anatomical forefoot room with a secure heel — one of the hardest parts
 - Heel secure enough for walking and play; avoid excessive heel slip.
 - Accommodate common toddler/little-kid shapes, including higher insteps and chubbier feet.
 - Heel counter provides structure without being stiff or uncomfortable.
-- The **hidden side zip is the primary tool for heel security**: it lets the instep/collar close snugly around the foot so the heel seats and the foot doesn't slide forward, without narrowing the toe box. This directly resolves the zero-drop + wide-toe + secure-heel tension that a pull-on can't.
+- The **side zip is the primary tool for heel security**: it lets the instep/collar close snugly around the foot so the heel seats and the foot doesn't slide forward, without narrowing the toe box. This directly resolves the zero-drop + wide-toe + secure-heel tension that a pull-on can't.
 
 **Key risk retired:** a wide anatomical toe box + zero drop + *pull-on* entry tends to create heel slip. The side zip removes that failure mode; the adult barefoot-western category (Shapen, Koel, etc.) reached the same conclusion.
 
 ## Closure & On/Off
 
-**Primary closure: a hidden inner (medial) side zip.**
+**Primary closure: an inner (medial) side zip, exposed (no flap).**
 
 - Placed on the **instep/medial side** so the outstep (lateral) western profile stays clean for hero photography.
 - Opens the boot enough for easy entry over a chubby toddler foot and higher instep, then closes for a snug, secure fit.
 - Zip pull and tape must be durable, child-safe, and smooth-operating; no small detachable parts.
+- **Comfort:** even though the zip is exposed (no flap), include a thin underlay/facing behind the zipper teeth so the tape and pull don't sit against the child's foot or sock. This is a lining detail, not a flap — it protects the foot without adding a closure layer.
 
 **Pull tabs are retained as a western styling cue and a light entry assist** (a functional back/side loop to help seat the foot as the zip closes) — not as the closure mechanism. Durable, easy for small hands/parents to grasp, no detachable parts.
 
