@@ -52,6 +52,12 @@ _Last updated: 2026-07-07_
   flow in Klaviyo (confirm → what to expect → founding-price promise). Design and
   build when we turn to lifecycle email.
 
+- **Klaviyo account — create at deploy time.** Stand up a *separate* Pardner Boots
+  Klaviyo account (not a list in Mandala Scrubs) before the page goes public —
+  need List ID, a Private API key (Profiles + Lists + Subscriptions write), and a
+  verified sender for double opt-in. Any signup before this exists is lost, not
+  queued.
+
 ---
 
 ## Reference
