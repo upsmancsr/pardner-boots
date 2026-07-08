@@ -1,0 +1,6 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Local dev: `netlify dev` serves the static files and the function together
+# at http://localhost:8888

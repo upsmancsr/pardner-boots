@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Brand — Kids' Western Boots, Built for Real Feet</title>
+  <meta name="description" content="Austin-designed kids' western boots with a natural toe shape, a level footbed, and a secure fit. Join the founding batch." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <!-- SWAP: replace "your brand" with the real wordmark -->
+    <a class="wordmark" href="/">your brand</a>
+    <span class="nav-tag">Austin, Texas</span>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="stitch-dot"></span>Founding batch &middot; opening soon</p>
+      <!-- H1 is the A/B variable. Default = variant A (no-JS fallback); main.js may swap it. -->
+      <h1 id="headline" data-variant="a">A real cowboy boot, designed for kids&rsquo; growing feet.</h1>
+      <p class="subhead">
+        A kids&rsquo; western boot with a natural toe shape, a level (near&#8209;zero&#8209;drop) footbed,
+        and a secure fit &mdash; the boot look you want, built for the foot your kid actually has.
+      </p>
+      <div class="hero-cta">
+        <a href="#join" class="btn btn-primary">Join the founding batch</a>
+        <span class="hero-price">$118 &middot; <strong>$98 founding price</strong></span>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <!-- SWAP: drop the concept render here (caramel boot, broad anatomical toe, side profile).
+           Replace this whole .render-slot block with an <img>. -->
+      <div class="render-slot">
+        <span class="render-label">Concept render</span>
+        <span class="render-note">caramel leather &middot; broad anatomical toe &middot; side profile</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE FIX ============ -->
+  <section class="fix">
+    <div class="section-head">
+      <p class="eyebrow"><span class="stitch-dot"></span>What&rsquo;s different</p>
+      <h2>Traditional kids&rsquo; cowboy boots are just shrunken adult boots.</h2>
+      <p class="lede">Narrow, pointed toes. A raised heel. Stiff soles. We kept everything that makes a boot a boot &mdash; and fixed the parts that fight a child&rsquo;s foot.</p>
+    </div>
+
+    <ul class="fix-grid">
+      <li class="fix-card">
+        <h3>A toe box with room</h3>
+        <p>Broad and anatomical, so toes spread and sit naturally &mdash; no pointed taper crushing them inward.</p>
+      </li>
+      <li class="fix-card">
+        <h3>A level footbed</h3>
+        <p>Near&#8209;zero drop, so your child stands flat. The western heel is shaped into the sole, not stacked under the foot.</p>
+      </li>
+      <li class="fix-card">
+        <h3>A secure, easy fit</h3>
+        <p>A discreet side zip holds the heel and makes them easy to get on &mdash; no wrestling, no slipping.</p>
+      </li>
+      <li class="fix-card">
+        <h3>Real leather, real boot</h3>
+        <p>Premium leather&#8209;forward construction in warm caramel. A boot that dresses up or down and holds up to play.</p>
+      </li>
+    </ul>
+
+    <p class="spine">Not a costume. Not a soft&#8209;sole bootie. A real cowboy boot &mdash; built like the grown&#8209;up ones, shaped like a kid&rsquo;s foot.</p>
+  </section>
+
+  <!-- ============ FOUNDING BAND ============ -->
+  <section class="band">
+    <div class="band-inner">
+      <p class="eyebrow eyebrow-light"><span class="stitch-dot light"></span>The founding batch</p>
+      <h2>Get first look, founding pricing, and a say in the fit.</h2>
+      <p>We&rsquo;re making a small first run in sizes 8C&ndash;12C. Join the list and you&rsquo;ll see the first real sample photos, lock the founding price of about $98 (vs. $118 at launch), and help us get the sizing right before we build.</p>
+      <a href="#join" class="btn btn-ghost">Join the founding batch</a>
+    </div>
+  </section>
+
+  <!-- ============ JOIN FORM ============ -->
+  <section class="join" id="join">
+    <div class="join-card">
+      <div class="join-head">
+        <p class="eyebrow"><span class="stitch-dot"></span>Join the list</p>
+        <h2>Tell us who you&rsquo;re shopping for.</h2>
+        <p class="join-sub">Takes ten seconds. We&rsquo;ll email you the first look and your founding&#8209;batch invite.</p>
+      </div>
+
+      <form id="join-form" novalidate>
+        <!-- honeypot: real users never fill this -->
+        <div class="hp" aria-hidden="true">
+          <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@email.com" autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="child_size">Your child&rsquo;s current shoe size</label>
+          <select id="child_size" name="child_size" required>
+            <option value="" disabled selected>Select a size</option>
+            <option>6C</option><option>7C</option><option>8C</option><option>9C</option>
+            <option>10C</option><option>11C</option><option>12C</option><option>13C</option>
+            <option value="Not sure">Not sure</option>
+          </select>
+          <p class="hint">We&rsquo;re starting with 8C&ndash;12C &mdash; other sizes help us decide what to add next.</p>
+        </div>
+
+        <div class="field">
+          <label for="price_intent">If it fits and looks right, what feels fair?</label>
+          <select id="price_intent" name="price_intent" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="$98">Around $98</option>
+            <option value="$118">Around $118</option>
+            <option value="More than $118">More than $118</option>
+            <option value="Not sure">Not sure yet</option>
+          </select>
+        </div>
+
+        <fieldset class="field">
+          <legend>What matters most to you?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="matters_most" value="The western look" /><span>The western look</span></label>
+            <label class="chip"><input type="radio" name="matters_most" value="Foot health & fit" /><span>Foot health &amp; fit</span></label>
+            <label class="chip"><input type="radio" name="matters_most" value="Both equally" /><span>Both equally</span></label>
+          </div>
+        </fieldset>
+
+        <input type="hidden" id="headline_variant" name="headline_variant" value="a" />
+
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Join the founding batch</button>
+        <p class="consent">By joining, you agree to receive occasional email updates. Unsubscribe anytime.</p>
+
+        <!-- DEPOSIT SLOT: once you have a real render/sample, add a Stripe Payment Link button here
+             for "Reserve your pair — fully refundable $X deposit". No rebuild needed. -->
+      </form>
+
+      <div class="join-success" id="join-success" hidden>
+        <div class="check" aria-hidden="true"></div>
+        <h3>You&rsquo;re on the founding list.</h3>
+        <p>Check your inbox to confirm &mdash; that&rsquo;s where the first look and your founding price will land.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <span class="wordmark small">your brand</span>
+    <span>Designed in Austin, Texas &middot; Made with expert footwear partners</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
