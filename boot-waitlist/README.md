@@ -15,7 +15,7 @@ netlify.toml          Netlify config
 
 - ~~**Brand name**~~ — done: set to **Pardner Boots** (nav, footer, `<title>`, and the `styles.css` header). Use bare "Pardner" only where in-sentence context calls for it.
 - **Hero render** — in `index.html`, replace the `.render-slot` block with `<img src="…" alt="…">` once you have a concept render or sample photo.
-- **Contact email** — the error message in `main.js` (`showError`) references emailing you; add the real address.
+- ~~**Contact email**~~ — done: the error message in `main.js` (`showError`) links to **cameron@pardnerboots.com**.
 - **Domain** — set in Netlify after deploy.
 
 ## Klaviyo setup (one-time)
