@@ -1,0 +1,72 @@
+<svg viewBox="0 0 720 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Concept illustration: a caramel leather kids' western boot with a broad anatomical toe, low toe spring, and a western heel notched into a slim, level outsole.">
+  <defs>
+    <linearGradient id="leather" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#CE9A5B"/>
+      <stop offset="0.55" stop-color="#BE854A"/>
+      <stop offset="1" stop-color="#A56E39"/>
+    </linearGradient>
+    <linearGradient id="sole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CBA875"/>
+      <stop offset="1" stop-color="#A98150"/>
+    </linearGradient>
+    <linearGradient id="tab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9C6733"/>
+      <stop offset="1" stop-color="#7E5227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- site card motif: warm card + dashed stitch border -->
+  <rect x="8" y="8" width="704" height="884" rx="12" fill="#F5EFE3" stroke="#C4AF92" stroke-width="2" stroke-dasharray="8 7"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="372" cy="780" rx="300" ry="17" fill="#2A2018" opacity="0.10"/>
+
+  <!-- ============ SLIM, LEVEL OUTSOLE WITH NOTCHED HEEL ============ -->
+  <!-- forefoot pad + heel block both reach the ground; arch is undercut = the western heel-breast, zero internal drop -->
+  <path d="M88,716 L652,716 L650,772 L548,772 L545,726
+           C520,730 496,731 472,727 L470,772 L120,772
+           C98,772 88,766 88,752 Z"
+        fill="url(#sole)" stroke="#8A5A2E" stroke-width="2" stroke-linejoin="round"/>
+  <!-- notch edges (heel breast + forefoot pad rear wall) -->
+  <path d="M546,728 L548,769" stroke="#7A4E27" stroke-width="2" fill="none"/>
+  <path d="M470,730 L470,769" stroke="#7A4E27" stroke-width="2" fill="none"/>
+  <!-- level-footbed line -->
+  <path d="M92,716 L648,716" stroke="#6E4824" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- ============ CARAMEL UPPER (clean lateral side, broad rounded toe, low spring) ============ -->
+  <path d="M100,716
+           C92,700 78,694 74,678
+           C70,662 82,652 92,648
+           C180,616 250,592 330,560
+           C352,432 372,300 405,188
+           C440,206 470,216 496,214
+           C540,212 566,196 588,178
+           C610,360 626,520 648,716
+           Z"
+        fill="url(#leather)" stroke="#7E5127" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- pull tab at the back seam -->
+  <g transform="rotate(6 616 198)">
+    <rect x="596" y="146" width="40" height="100" rx="12" fill="url(#tab)" stroke="#F0E6CE" stroke-width="2" stroke-dasharray="5 4"/>
+    <circle cx="616" cy="170" r="6.5" fill="#F5EFE3"/>
+  </g>
+
+  <!-- ============ WESTERN STITCH DETAIL (cream thread) ============ -->
+  <g fill="none" stroke="#F0E6CE" stroke-width="2.2" stroke-dasharray="6 4.5" stroke-linecap="round">
+    <!-- welt seam -->
+    <path d="M112,710 L640,710"/>
+    <!-- vamp topline -->
+    <path d="M104,660 C185,628 252,606 322,576"/>
+    <!-- toe medallion hint -->
+    <path d="M122,690 C152,672 186,668 212,677"/>
+    <!-- collar line just inside the shaft top -->
+    <path d="M412,198 C470,222 540,222 582,194"/>
+    <!-- decorative shaft stitching (simplified western) -->
+    <path d="M426,548 C452,430 460,320 452,236"/>
+    <path d="M486,548 C516,432 526,326 520,236"/>
+  </g>
+
+  <!-- caption echoing the site's render label -->
+  <text x="360" y="842" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="22" font-weight="600" fill="#8A5A2E">The Pardner boot &#183; concept</text>
+  <text x="360" y="868" text-anchor="middle" font-family="'Hanken Grotesk', system-ui, sans-serif" font-size="13.5" letter-spacing="0.04em" fill="#5F5142">caramel leather &#183; anatomical toe &#183; notched zero-drop heel</text>
+</svg>
