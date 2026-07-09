@@ -37,8 +37,25 @@ if (headlineEl && variant !== "a") {          // "a" is already in the HTML
   headlineEl.dataset.variant = variant;
 }
 document.getElementById("headline_variant").value = variant;
-// Tip: also send `variant` to your web analytics as a custom prop/event so you
-// can divide signups (conversions) by impressions per variant. See README.
+
+/* ---------------- analytics (GA4) ---------------- */
+// Paste the GA4 Measurement ID ("G-...") to enable analytics. Empty string
+// disables it entirely — no script is loaded, nothing is sent. The variant
+// rides on every event so impressions can be split per headline; register
+// "headline_variant" as an event-scoped custom dimension in GA4 to report
+// on it. Conversion rate per variant = join_waitlist / page_view.
+const GA_MEASUREMENT_ID = "";
+
+if (GA_MEASUREMENT_ID) {
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_MEASUREMENT_ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { dataLayer.push(arguments); };
+  gtag("js", new Date());
+  gtag("config", GA_MEASUREMENT_ID, { headline_variant: variant });
+}
 
 /* ---------------- form ---------------- */
 const form = document.getElementById("join-form");
@@ -77,6 +94,7 @@ form.addEventListener("submit", async (e) => {
       body: JSON.stringify(payload),
     });
     if (!res.ok) throw new Error("bad status " + res.status);
+    if (window.gtag) gtag("event", "join_waitlist", { headline_variant: variant });
     showSuccess();
   } catch (err) {
     btn.disabled = false;
