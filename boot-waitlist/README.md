@@ -69,7 +69,7 @@ Then: trigger a welcome flow on list-join, and at launch segment (e.g. `kids_sho
 
 `headline_variant` on each profile tells you the **conversion mix** — but conversion *rate* needs impressions per variant too. Two clean options:
 
-- Send `variant` to your web analytics (Plausible, GA4, etc.) as a custom event/property on page load, then compare signups-by-variant (from Klaviyo) against pageviews-by-variant (from analytics).
+- **GA4 (built in):** paste your Measurement ID into `GA_MEASUREMENT_ID` at the top of `main.js` (empty = fully disabled). Every event carries `headline_variant`; a successful signup fires a `join_waitlist` event. In GA4, register `headline_variant` as an event-scoped custom dimension (Admin → Custom definitions), then conversion rate per variant = `join_waitlist` ÷ `page_view`.
 - Or drive traffic with `?v=a`, `?v=b`, `?v=c` on separate links/campaigns so each variant's impressions and signups are attributable at the source.
 
 Variant assignment is sticky per visitor (stored in `localStorage`) so returning visitors see the same headline.
