@@ -5,7 +5,7 @@ this as calls are made so future sessions start oriented. When a locked decision
 changes, don't delete it — move it down to a "Superseded" note with the date and
 reason.
 
-_Last updated: 2026-07-07_
+_Last updated: 2026-07-08_
 
 ---
 
@@ -38,6 +38,11 @@ _Last updated: 2026-07-07_
 
 6. **Waitlist stack** — **Klaviyo only** for the waitlist. Landing page hosted on
    **Netlify** (static page + one serverless function that talks to Klaviyo).
+
+7. **Infrastructure separation** — *All* Pardner Boots accounts are fully
+   separate from Mandala Scrubs: its own email workspace (@pardnerboots.com,
+   not an alias in the Mandala Google Workspace), its own Netlify account,
+   its own Klaviyo account. Different projects, separated concerns.
 
 ---
 
