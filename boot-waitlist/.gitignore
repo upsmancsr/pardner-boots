@@ -1,2 +1,6 @@
 # Local Netlify folder
 .netlify
+
+# Large source images — the optimized web JPEGs (hero.jpg, toe-box.jpg) are committed instead
+Waitlist-hero-image.png
+waitlist-top-down-image.png

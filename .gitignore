@@ -10,3 +10,6 @@ node_modules/
 
 # macOS
 .DS_Store
+
+# Large source images at repo root (optimized web copy is committed under boot-waitlist/)
+waitlist-hero-image-tall-2.png
