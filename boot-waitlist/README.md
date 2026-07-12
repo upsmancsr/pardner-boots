@@ -20,7 +20,7 @@ netlify.toml          Netlify config
 
 ## Klaviyo setup (one-time) — done 2026-07-08
 
-1. ~~Create a **separate Klaviyo account**~~ — done (separate Pardner Boots account, per DECISIONS.md #7).
+1. ~~Create a **separate Klaviyo account**~~ — done (separate Pardner Boots account, fully independent of any other brand's stack).
 2. ~~Create a **List** for the founding waitlist~~ — done: List ID **`VUATXv`**.
 3. ~~Create a **Private API key**~~ — done: custom key scoped to **List + Profiles + Subscriptions** (full access), nothing else.
 4. **Opt-in mode:** double opt-in (Klaviyo default; the page's success copy assumes it). The confirmation email is sent from the branded sending domain **`send.pardnerboots.com`** (verified + activated in Klaviyo → Settings → Email → Domains) — without it, confirmations land in spam. Switch the list to single opt-in only if confirmation rates look weak with real traffic; that also means changing the success message in `index.html`.
