@@ -5,109 +5,216 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pardner Boots — Kids' Western Boots, Built for Real Feet</title>
   <meta name="description" content="Austin-designed kids' western boots with a natural toe shape, a level footbed, and a secure fit. Join the founding batch." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Quicksand:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
+  <!-- ============ TOP ============ -->
+  <div class="topbar"></div>
+
   <!-- ============ NAV ============ -->
   <header class="nav">
-    <a class="wordmark" href="/">Pardner Boots</a>
-    <span class="nav-tag">Austin, Texas</span>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="our-story.html">Our Story</a>
+        </nav>
+      </div>
+      <a class="wordmark" href="/" aria-label="Pardner Boots — home"><img class="wordmark-img" src="logo.svg" alt="Pardner Boots" /></a>
+      <nav class="nav-links right">
+        <a href="#join">Join the List</a>
+      </nav>
+    </div>
   </header>
+
+  <!-- ============ ANNOUNCE (marquee, below the nav) ============ -->
+  <div class="announce">
+    <div class="announce-track">
+      <span>Kids&rsquo; feet are still growing &mdash; a <strong>wide toe box</strong> gives them room to splay</span>
+      <span>Made for <strong>stomping in puddles</strong> and running wild</span>
+      <span>Flat, flexible soles <strong>let little feet move</strong> the way they&rsquo;re built to</span>
+      <span>Real western boots, <strong>shaped for real little feet</strong></span>
+      <span>The <strong>founding batch</strong> is open &mdash; come walk with us</span>
+      <span aria-hidden="true">Kids&rsquo; feet are still growing &mdash; a <strong>wide toe box</strong> gives them room to splay</span>
+      <span aria-hidden="true">Made for <strong>stomping in puddles</strong> and running wild</span>
+      <span aria-hidden="true">Flat, flexible soles <strong>let little feet move</strong> the way they&rsquo;re built to</span>
+      <span aria-hidden="true">Real western boots, <strong>shaped for real little feet</strong></span>
+      <span aria-hidden="true">The <strong>founding batch</strong> is open &mdash; come walk with us</span>
+    </div>
+  </div>
+
+  <!-- ============ MOBILE DRAWER ============ -->
+  <div class="drawer-scrim" data-drawer-close></div>
+  <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Menu">
+    <button class="drawer-close" aria-label="Close menu" data-drawer-close>&times;</button>
+    <nav class="drawer-nav">
+      <a href="/" data-drawer-close>Home</a>
+      <a href="our-story.html" data-drawer-close>Our Story</a>
+      <a href="#join" data-drawer-close>Join the List</a>
+    </nav>
+    <div class="drawer-foot">
+      <span>Get in touch</span>
+      <a href="mailto:cameron@pardnerboots.com">cameron@pardnerboots.com</a>
+    </div>
+  </aside>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow"><span class="stitch-dot"></span>Founding batch &middot; opening soon</p>
-      <!-- H1 is the A/B variable. Default = variant A (no-JS fallback); main.js may swap it. -->
-      <h1 id="headline" data-variant="a">A real cowboy boot, designed for kids&rsquo; growing feet.</h1>
-      <p class="subhead">
-        A natural toe shape, a level footbed, and a secure fit.
-        The boot look you want, built for the foot your kid actually has.
-      </p>
-      <div class="hero-cta">
-        <a href="#join" class="btn btn-primary">Join the founding batch</a>
-        <span class="hero-price">$118 &middot; <strong>$98 founding price</strong></span>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The founding batch is open</p>
+        <h1 id="headline">Barefoot cowboy boots, made for <span class="felt">real little feet</span>.</h1>
+        <p class="subhead">Every bit the cowboy boot, none of the pinch &mdash; built for the foot your kid actually has, not a shrunk-down adult one.</p>
+        <div class="hero-cta">
+          <a href="#join" class="btn btn-primary">Join the founding batch <span class="arrow">&rarr;</span></a>
+          <span class="hero-price">$118 &middot; <strong>$98 founding price</strong></span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <svg class="hero-star" viewBox="0 0 68.42 67.23" fill="currentColor" aria-hidden="true"><path d="M20.99,15.28c-.22-.46.44-2.09.8-1.83,4.35,3.05,8.27,6.62,12.16,10.41l5.23-7.05c.18-.24.71-.75.99-.74s.75.19,1.31.4l-.02,12.82,12.67,2.01c.5.08,1.41.84,1.31,1.23s-.84,1.06-1.27,1.15l-9.13,2.01,8.59,13.24.29,1.06c.06.22-.62.4-1.05.53l-13.19-8.89-9.61,11.63-1.12.54c-.31.15-.97-.81-.92-1.18l1.71-14.86-16.79-5.11c.57-1.32,1.53-1.83,2.66-1.89l12.36-.59-6.98-14.89Z"/></svg>
+        <figure class="polaroid polaroid-1">
+          <img src="boot-birdseye.jpg" alt="Top-down view of the caramel kids' western boot showing the wide, rounded toe box and the pardner logo on the insole." />
+          <figcaption>room to wiggle</figcaption>
+        </figure>
+        <figure class="polaroid polaroid-2">
+          <img src="boot-side.jpg" alt="Side-angle view of the caramel kids' western boot with a broad toe, low heel, and a level sole." />
+          <figcaption>pediatrician approved</figcaption>
+        </figure>
       </div>
     </div>
+  </section>
 
-    <div class="hero-art">
-      <!-- Concept render. SWAP: replace src with an updated render or a real
-           sample photo when you have one (keep the same class + alt). -->
-      <img class="hero-render" src="hero.jpg"
-           alt="A caramel leather kids' western boot, three-quarter view: broad rounded anatomical toe, low toe spring, western shaft stitching, and a low heel on a slim, level outsole." />
+  <!-- ============ WHAT'S DIFFERENT — COMPARISON ============ -->
+  <section class="section compare">
+    <div class="section-inner">
+      <div class="section-title">
+        <p class="eyebrow">What&rsquo;s different</p>
+        <h2>Made for <span class="felt">real kids&rsquo; feet</span>.</h2>
+        <p class="section-sub">The cowboy look, the foot-healthy build, and plenty of room for puddle-stomping. Most boots make you choose &mdash; we didn&rsquo;t.</p>
+      </div>
+
+      <div class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="vh">Feature</span></th>
+              <th scope="col" class="col-us"><img class="compare-logo" src="logo-light.svg" alt="Pardner" /><span class="col-us-star">Best of both</span></th>
+              <th scope="col">Traditional<br />cowboy boots</th>
+              <th scope="col">Barefoot<br />sneakers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Wide, anatomical toe box</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+              <td class="yes"><span class="vh">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Flat, level sole</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+              <td class="yes"><span class="vh">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Room for growing feet</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+              <td class="yes"><span class="vh">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">A real western boot look</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Pediatrician approved</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+              <td class="yes"><span class="vh">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">The look <em>and</em> the fit</th>
+              <td class="col-us yes"><span class="vh">Yes</span></td>
+              <td class="no"><span class="vh">No</span></td>
+              <td class="no"><span class="vh">No</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="compare-note">Cowboy boots nail the look. Barefoot sneakers nail the fit. Pardner is the only one doing both.</p>
+      <div class="compare-cta"><a href="#join" class="btn btn-primary">Join the founding batch <span class="arrow">&rarr;</span></a></div>
     </div>
   </section>
 
-  <!-- ============ THE FIX ============ -->
-  <section class="fix">
-    <div class="section-head">
-      <p class="eyebrow"><span class="stitch-dot"></span>What&rsquo;s different</p>
-      <h2>Traditional kids&rsquo; cowboy boots are just shrunken adult boots.</h2>
-      <p class="lede">Narrow, pointed toes. A raised heel. Stiff soles. We fixed all of that, and kept everything that makes a boot a boot.</p>
-    </div>
+  <!-- ============ ROOM TO WIGGLE — SCROLLY BOOT ANATOMY ============ -->
+  <section class="section wiggle" aria-label="What makes them different">
+    <div class="showcase-track" id="boot-showcase" data-active="0">
+      <div class="showcase-sticky">
+        <div class="showcase-intro">
+          <p class="eyebrow">Room to wiggle</p>
+          <h2>Little feet are <span class="felt">only little for so long</span>.</h2>
+          <p class="section-sub">So we built in room for every wiggle, splay, and growth spurt.</p>
+        </div>
+        <div class="showcase-main">
+        <div class="showcase-stage">
+          <div class="showcase-imgs">
+            <img class="s-img active" data-img="birdseye" src="boot-birdseye.jpg" alt="Top-down view of the caramel kids' western boot" />
+            <img class="s-img" data-img="side" src="boot-side.jpg" alt="Side view of the caramel kids' western boot" />
+          </div>
 
-    <figure class="fix-figure">
-      <img src="toe-box.jpg" alt="Top-down view of the caramel boot showing a broad, rounded anatomical toe box with room for the toes to spread." />
-      <figcaption>A natural, wide toe box with room for your little one&rsquo;s toes to wiggle.</figcaption>
-    </figure>
-
-    <ul class="fix-grid">
-      <li class="fix-card">
-        <h3>A toe box with room</h3>
-        <p>Broad and anatomical, so toes splay and sit the way they&rsquo;re built to. No pointed taper crushing them inward.</p>
-      </li>
-      <li class="fix-card">
-        <h3>A level footbed</h3>
-        <p>Flat from heel to toe, so your child stands naturally. The western heel is shaped into the sole, not stacked under the foot.</p>
-      </li>
-      <li class="fix-card">
-        <h3>A secure, easy fit</h3>
-        <p>A discreet side zip holds the heel snug and makes them easy to pull on. No wrestling, no slipping.</p>
-      </li>
-      <li class="fix-card">
-        <h3>Real leather, real boot</h3>
-        <p>Premium leather&#8209;forward construction in warm caramel. A boot that dresses up or down and holds up to play.</p>
-      </li>
-    </ul>
-
-    <p class="spine">Not a kids&rsquo; shoe made to look like a cowboy boot. A real boot, made for kids&rsquo; feet.</p>
-  </section>
-
-  <!-- ============ OUR STORY ============ -->
-  <section class="story">
-    <div class="section-head">
-      <p class="eyebrow"><span class="stitch-dot"></span>Our story</p>
-      <h2>Why Pardner exists.</h2>
-    </div>
-    <div class="story-body">
-      <p>I&rsquo;ve loved cowboy boots my whole life. The look, the function, all of it. My feet never quite agreed. Years of chronic foot pain finally pushed me to shoes shaped like actual feet, wide in the toes and flat underfoot. The relief I found changed how I judge every shoe I buy.</p>
-      <p>Then my son got his first pair of cowboy boots. He loved them. He looked great in them. They went on and off easy, which helps when your toddler never sits still. But every time he wore them I saw the same narrow toe and raised heel it took me years to walk away from, now on feet that are still forming.</p>
-      <p>So I went looking for a better pair and found a hole in the market. Western brands build kids&rsquo; boots the way they always have, as scaled&#8209;down adult boots. The brands that get growing feet right, with roomy toe boxes and flat, flexible soles, stop at sneakers and sandals. If someone out there makes a real cowboy boot shaped for a kid&rsquo;s foot, we couldn&rsquo;t find them.</p>
-      <p>So we decided to make it ourselves.</p>
-    </div>
-    <p class="mission">The mission is simple: a high&#8209;quality, classic western boot that never asks a kid&rsquo;s feet to pay for the look.</p>
-  </section>
-
-  <!-- ============ FOUNDING BAND ============ -->
-  <section class="band">
-    <div class="band-inner">
-      <p class="eyebrow eyebrow-light"><span class="stitch-dot light"></span>The founding batch</p>
-      <h2>First look, founding price, and a say in the fit.</h2>
-      <p>We&rsquo;re making a small first run in sizes 8C&ndash;12C. Join the list and you&rsquo;ll see the first real sample photos, lock the $98 founding price (vs. $118 at launch), and help us get the sizing right before we build.</p>
-      <a href="#join" class="btn btn-ghost">Join the founding batch</a>
+          <div class="s-callout active label-right" data-step="0" style="--x:42%;--y:24%">
+            <svg class="s-marker" viewBox="0 0 68.42 67.23" fill="currentColor" aria-hidden="true"><path d="M20.99,15.28c-.22-.46.44-2.09.8-1.83,4.35,3.05,8.27,6.62,12.16,10.41l5.23-7.05c.18-.24.71-.75.99-.74s.75.19,1.31.4l-.02,12.82,12.67,2.01c.5.08,1.41.84,1.31,1.23s-.84,1.06-1.27,1.15l-9.13,2.01,8.59,13.24.29,1.06c.06.22-.62.4-1.05.53l-13.19-8.89-9.61,11.63-1.12.54c-.31.15-.97-.81-.92-1.18l1.71-14.86-16.79-5.11c.57-1.32,1.53-1.83,2.66-1.89l12.36-.59-6.98-14.89Z"/></svg>
+            <span class="s-label"><strong>Wide toe box</strong>Broad and rounded, so little toes can splay and spread the way they&rsquo;re built to &mdash; not squished into a point.</span>
+          </div>
+          <div class="s-callout label-right" data-step="1" style="--x:43%;--y:79%">
+            <svg class="s-marker" viewBox="0 0 68.42 67.23" fill="currentColor" aria-hidden="true"><path d="M20.99,15.28c-.22-.46.44-2.09.8-1.83,4.35,3.05,8.27,6.62,12.16,10.41l5.23-7.05c.18-.24.71-.75.99-.74s.75.19,1.31.4l-.02,12.82,12.67,2.01c.5.08,1.41.84,1.31,1.23s-.84,1.06-1.27,1.15l-9.13,2.01,8.59,13.24.29,1.06c.06.22-.62.4-1.05.53l-13.19-8.89-9.61,11.63-1.12.54c-.31.15-.97-.81-.92-1.18l1.71-14.86-16.79-5.11c.57-1.32,1.53-1.83,2.66-1.89l12.36-.59-6.98-14.89Z"/></svg>
+            <span class="s-label"><strong>Flat, level footbed</strong>No stacked heel, no ramp &mdash; just a low, level base that lets growing feet move and balance the way they should.</span>
+          </div>
+          <div class="s-callout label-right" data-step="2" style="--x:58%;--y:44%">
+            <svg class="s-marker" viewBox="0 0 68.42 67.23" fill="currentColor" aria-hidden="true"><path d="M20.99,15.28c-.22-.46.44-2.09.8-1.83,4.35,3.05,8.27,6.62,12.16,10.41l5.23-7.05c.18-.24.71-.75.99-.74s.75.19,1.31.4l-.02,12.82,12.67,2.01c.5.08,1.41.84,1.31,1.23s-.84,1.06-1.27,1.15l-9.13,2.01,8.59,13.24.29,1.06c.06.22-.62.4-1.05.53l-13.19-8.89-9.61,11.63-1.12.54c-.31.15-.97-.81-.92-1.18l1.71-14.86-16.79-5.11c.57-1.32,1.53-1.83,2.66-1.89l12.36-.59-6.98-14.89Z"/></svg>
+            <span class="s-label"><strong>Room to grow</strong>Shaped for a growing kid&rsquo;s foot, not a shrunk-down adult boot &mdash; with a little room to grow into.</span>
+          </div>
+          <div class="s-callout label-left" data-step="3" style="--x:53%;--y:22%">
+            <svg class="s-marker" viewBox="0 0 68.42 67.23" fill="currentColor" aria-hidden="true"><path d="M20.99,15.28c-.22-.46.44-2.09.8-1.83,4.35,3.05,8.27,6.62,12.16,10.41l5.23-7.05c.18-.24.71-.75.99-.74s.75.19,1.31.4l-.02,12.82,12.67,2.01c.5.08,1.41.84,1.31,1.23s-.84,1.06-1.27,1.15l-9.13,2.01,8.59,13.24.29,1.06c.06.22-.62.4-1.05.53l-13.19-8.89-9.61,11.63-1.12.54c-.31.15-.97-.81-.92-1.18l1.71-14.86-16.79-5.11c.57-1.32,1.53-1.83,2.66-1.89l12.36-.59-6.98-14.89Z"/></svg>
+            <span class="s-label"><strong>&ldquo;I do it myself&rdquo; tabs</strong>Two easy pull-on tabs, so your little one can get them on and off all by themselves &mdash; a real confidence boost.</span>
+          </div>
+        </div>
+        <div class="showcase-panel">
+          <div class="showcase-progress" aria-hidden="true">
+            <span class="s-print active" data-step="0"><svg viewBox="0 0 20 28" fill="currentColor" aria-hidden="true"><path d="M10 8.2c3.2 0 4.9 2.6 4.9 6.4 0 3-1 5.4-1 8.4 0 2.5-1.4 4.6-3.9 4.6s-3.9-2.1-3.9-4.6c0-3-1-5.4-1-8.4C5.1 10.8 6.8 8.2 10 8.2Z"/><ellipse cx="5.4" cy="6.2" rx="1.3" ry="1.6"/><ellipse cx="8.5" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="11.6" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="14.6" cy="6.2" rx="1.3" ry="1.6"/></svg></span>
+            <span class="s-print" data-step="1"><svg viewBox="0 0 20 28" fill="currentColor" aria-hidden="true"><path d="M10 8.2c3.2 0 4.9 2.6 4.9 6.4 0 3-1 5.4-1 8.4 0 2.5-1.4 4.6-3.9 4.6s-3.9-2.1-3.9-4.6c0-3-1-5.4-1-8.4C5.1 10.8 6.8 8.2 10 8.2Z"/><ellipse cx="5.4" cy="6.2" rx="1.3" ry="1.6"/><ellipse cx="8.5" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="11.6" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="14.6" cy="6.2" rx="1.3" ry="1.6"/></svg></span>
+            <span class="s-print" data-step="2"><svg viewBox="0 0 20 28" fill="currentColor" aria-hidden="true"><path d="M10 8.2c3.2 0 4.9 2.6 4.9 6.4 0 3-1 5.4-1 8.4 0 2.5-1.4 4.6-3.9 4.6s-3.9-2.1-3.9-4.6c0-3-1-5.4-1-8.4C5.1 10.8 6.8 8.2 10 8.2Z"/><ellipse cx="5.4" cy="6.2" rx="1.3" ry="1.6"/><ellipse cx="8.5" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="11.6" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="14.6" cy="6.2" rx="1.3" ry="1.6"/></svg></span>
+            <span class="s-print" data-step="3"><svg viewBox="0 0 20 28" fill="currentColor" aria-hidden="true"><path d="M10 8.2c3.2 0 4.9 2.6 4.9 6.4 0 3-1 5.4-1 8.4 0 2.5-1.4 4.6-3.9 4.6s-3.9-2.1-3.9-4.6c0-3-1-5.4-1-8.4C5.1 10.8 6.8 8.2 10 8.2Z"/><ellipse cx="5.4" cy="6.2" rx="1.3" ry="1.6"/><ellipse cx="8.5" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="11.6" cy="4.1" rx="1.4" ry="1.7"/><ellipse cx="14.6" cy="6.2" rx="1.3" ry="1.6"/></svg></span>
+          </div>
+          <div class="showcase-caption" aria-live="polite"></div>
+        </div>
+        </div>
+      </div>
+      <div class="showcase-sentinels" aria-hidden="true">
+        <div class="s-sent" data-step="0"></div>
+        <div class="s-sent" data-step="1"></div>
+        <div class="s-sent" data-step="2"></div>
+        <div class="s-sent" data-step="3"></div>
+      </div>
     </div>
   </section>
 
   <!-- ============ JOIN FORM ============ -->
-  <section class="join" id="join">
+  <section class="section join" id="join">
     <div class="join-card">
       <div class="join-head">
-        <p class="eyebrow"><span class="stitch-dot"></span>Join the list</p>
-        <h2>Tell us who you&rsquo;re shopping for.</h2>
-        <p class="join-sub">Takes ten seconds. We&rsquo;ll email you the first look and your founding&#8209;batch invite.</p>
+        <p class="eyebrow">The founding batch is open</p>
+        <h2>Join the <span class="felt">founding batch</span>.</h2>
+        <p class="join-sub">We&rsquo;re making our very first run, and we&rsquo;d love you in it &mdash; first-look photos, the $98 founding price, and a real say in the fit before we build.</p>
       </div>
 
       <form id="join-form" novalidate>
@@ -122,18 +229,18 @@
         </div>
 
         <div class="field">
-          <label for="child_size">Your child&rsquo;s current shoe size</label>
+          <label for="child_size">Your kid&rsquo;s current shoe size</label>
           <select id="child_size" name="child_size" required>
             <option value="" disabled selected>Select a size</option>
             <option>6C</option><option>7C</option><option>8C</option><option>9C</option>
             <option>10C</option><option>11C</option><option>12C</option><option>13C</option>
             <option value="Not sure">Not sure</option>
           </select>
-          <p class="hint">We&rsquo;re starting with 8C&ndash;12C. Other sizes help us decide what to add next.</p>
+          <p class="hint">We&rsquo;re starting with 8C&ndash;12C &mdash; other sizes tell us what to make next.</p>
         </div>
 
         <div class="field">
-          <label for="price_intent">If it fits and looks right, what feels fair?</label>
+          <label for="price_intent">If it fits and looks great, what feels fair?</label>
           <select id="price_intent" name="price_intent" required>
             <option value="" disabled selected>Choose one</option>
             <option value="$98">Around $98</option>
@@ -154,27 +261,54 @@
 
         <input type="hidden" id="headline_variant" name="headline_variant" value="a" />
 
-        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Join the founding batch</button>
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Join the founding batch <span class="arrow">&rarr;</span></button>
         <p class="consent">By joining, you agree to receive occasional email updates. Unsubscribe anytime.</p>
-
-        <!-- DEPOSIT SLOT: once you have a real render/sample, add a Stripe Payment Link button here
-             for "Reserve your pair — fully refundable $X deposit". No rebuild needed. -->
       </form>
 
       <div class="join-success" id="join-success" hidden>
         <div class="check" aria-hidden="true"></div>
-        <h3>You&rsquo;re on the founding list.</h3>
+        <h3>You&rsquo;re in, pardner!</h3>
         <p>Check your inbox to confirm &mdash; that&rsquo;s where the first look and your founding price will land.</p>
       </div>
     </div>
   </section>
 
+  <!-- ============ OUR STORY TEASER ============ -->
+  <section class="section story-teaser">
+    <div class="section-inner">
+      <p class="eyebrow">Our story</p>
+      <h2>Why Pardner exists.</h2>
+      <p>A lifelong love of cowboy boots, years of chronic foot pain, and a toddler in a pair of shrunken adult boots. That&rsquo;s where Pardner started &mdash; and why we set out to build a better one.</p>
+      <a href="our-story.html" class="btn btn-primary">Read our story <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
   <!-- ============ FOOTER ============ -->
   <footer class="foot">
-    <span class="wordmark small">Pardner Boots</span>
-    <span>Designed in Austin, Texas &middot; Made with expert footwear partners</span>
+    <div class="foot-inner">
+      <div>
+        <img class="foot-logo" src="logo-light.svg" alt="Pardner Boots" />
+        <p class="foot-tag">Barefoot cowboy boots, made for real little feet &mdash; none of the pinch. Designed in Austin, Texas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="/">Home</a>
+        <a href="our-story.html">Our Story</a>
+        <a href="#join">Join the List</a>
+      </div>
+      <div class="foot-col">
+        <h4>Get in touch</h4>
+        <a href="mailto:cameron@pardnerboots.com">cameron@pardnerboots.com</a>
+        <a class="foot-social" href="https://instagram.com/pardnerboots" target="_blank" rel="noopener" aria-label="Instagram — @pardnerboots">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="foot-bottom">&copy; 2026 Pardner Boots &middot; Designed in Austin, Texas &middot; Made with expert footwear partners</div>
   </footer>
 
+  <script src="nav.js"></script>
+  <script src="showcase.js"></script>
   <script src="main.js"></script>
 </body>
 </html>
