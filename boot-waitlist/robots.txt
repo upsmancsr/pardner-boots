@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pardnerboots.com/sitemap.xml
