@@ -419,6 +419,18 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
   color: var(--yellow);
   animation: twinkle 2.6s ease-in-out infinite;
 }
+/* on mobile, float the spur above the wordmark instead of wrapping below */
+@media (max-width: 640px) {
+  .page-head h1 { position: relative; display: inline-block; }
+  .page-star {
+    position: absolute;
+    top: -0.55em;
+    right: -0.15em;
+    width: 0.75em; height: 0.75em;
+    margin: 0;
+    vertical-align: baseline;
+  }
+}
 
 /* room to wiggle — happy blue block with warm kid copy */
 .wiggle { background: var(--sky); text-align: center; }
@@ -556,7 +568,7 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
   .s-print:nth-child(2) { transform: translateY(2px) rotate(12deg) scaleX(-1); }
   .s-print:nth-child(3) { transform: translateY(-6px) rotate(-12deg); }
   .s-print:nth-child(4) { transform: translateY(-14px) rotate(12deg) scaleX(-1); }
-  .showcase-caption { min-height: 5.4rem; text-align: center; order: 1; }
+  .showcase-caption { min-height: 8.5rem; text-align: center; order: 1; }
   .showcase-caption strong { font-size: 1.4rem; }
 }
 
