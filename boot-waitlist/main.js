@@ -30,12 +30,8 @@ function pickVariant() {
   return chosen;
 }
 
-const variant = pickVariant();
-const headlineEl = document.getElementById("headline");
-if (headlineEl && variant !== "a") {          // "a" is already in the HTML
-  headlineEl.textContent = VARIANTS[variant];
-  headlineEl.dataset.variant = variant;
-}
+// A/B headline test retired — the hero uses one fixed headline now.
+const variant = "single";
 const hvEl = document.getElementById("headline_variant");
 if (hvEl) hvEl.value = variant;
 
