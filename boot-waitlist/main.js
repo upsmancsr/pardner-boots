@@ -36,7 +36,8 @@ if (headlineEl && variant !== "a") {          // "a" is already in the HTML
   headlineEl.textContent = VARIANTS[variant];
   headlineEl.dataset.variant = variant;
 }
-document.getElementById("headline_variant").value = variant;
+const hvEl = document.getElementById("headline_variant");
+if (hvEl) hvEl.value = variant;
 
 /* ---------------- analytics (GA4) ---------------- */
 // Paste the GA4 Measurement ID ("G-...") to enable analytics. Empty string
@@ -62,7 +63,7 @@ const form = document.getElementById("join-form");
 const btn = document.getElementById("submit-btn");
 const successPanel = document.getElementById("join-success");
 
-form.addEventListener("submit", async (e) => {
+if (form) form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   // honeypot: if filled, silently "succeed" without sending
