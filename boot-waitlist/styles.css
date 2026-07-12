@@ -665,6 +665,10 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
   margin: 0 0 1rem;
 }
 .foot-col a { display: block; width: fit-content; color: var(--cream); margin-bottom: 0.7rem; font-size: 0.9rem; }
+.foot-social { margin-top: 0.5rem; color: var(--cream); }
+.foot-social svg { width: 24px; height: 24px; display: block; }
+.foot-social::after { content: none; }
+.foot-social:hover { color: var(--yellow); }
 .foot-bottom {
   max-width: var(--wrap);
   margin: 0 auto;
