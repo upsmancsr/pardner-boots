@@ -222,6 +222,27 @@ a { color: inherit; }
   margin: 0;
 }
 
+/* ---- our story ---- */
+.story {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 6rem) var(--pad);
+  border-top: 2px dashed var(--stitch);
+}
+.story-body { max-width: 62ch; }
+.story-body p { margin: 0 0 1.3rem; color: var(--ink-soft); font-size: 1.05rem; }
+.story-body p:last-child { margin-bottom: 0; color: var(--ink); font-weight: 600; }
+.mission {
+  font-family: var(--display);
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  line-height: 1.35;
+  font-weight: 600;
+  max-width: 32ch;
+  margin: 2.5rem 0 0;
+  padding-left: 1.2rem;
+  border-left: 3px solid var(--caramel);
+}
+
 /* ---- founding band ---- */
 .band { background: var(--indigo-deep); color: var(--paper); }
 .band-inner {
