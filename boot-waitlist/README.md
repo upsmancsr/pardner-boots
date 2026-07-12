@@ -11,28 +11,30 @@ netlify/functions/
 netlify.toml          Netlify config
 ```
 
-## What to swap before launch
+## Launch checklist — all done (launched 2026-07-08 at [pardnerboots.com](https://pardnerboots.com))
 
 - ~~**Brand name**~~ — done: set to **Pardner Boots** (nav, footer, `<title>`, and the `styles.css` header). Use bare "Pardner" only where in-sentence context calls for it.
-- **Hero render** — in `index.html`, replace the `.render-slot` block with `<img src="…" alt="…">` once you have a concept render or sample photo.
+- ~~**Hero render**~~ — done: `hero.jpg` (tall-shaft caramel boot) in the hero, `toe-box.jpg` (top-down) in the fix section.
 - ~~**Contact email**~~ — done: the error message in `main.js` (`showError`) links to **cameron@pardnerboots.com**.
-- **Domain** — set in Netlify after deploy.
+- ~~**Domain**~~ — done: `pardnerboots.com` (A `@` → `75.2.60.5`, CNAME `www` → `pardner-boots.netlify.app` at GoDaddy). **DNS stays at GoDaddy, additive records only** — email MX and Klaviyo sending-domain records live there; never switch nameservers.
 
-## Klaviyo setup (one-time)
+## Klaviyo setup (one-time) — done 2026-07-08
 
-1. Create a **separate Klaviyo account** for this brand (not a list inside another account — different domain, sending reputation, and future store).
-2. Create a **List** for the founding waitlist. Copy its **List ID** (Lists & Segments → the list → the 6-char ID in the URL, e.g. `Y6nRLr`).
-3. Create a **Private API key** (Settings → API keys) with write access to **Profiles, Lists, and Subscriptions**.
-4. **Opt-in mode:** the list defaults to *double opt-in* (Klaviyo sends a confirmation email; the profile isn't fully on the list until they click). That's the safest for consent, and the page's success copy already assumes it. If you'd rather capture single opt-in (lower friction, no confirm step), switch the list to single opt-in and change the success message in `index.html`.
+1. ~~Create a **separate Klaviyo account**~~ — done (separate Pardner Boots account, per DECISIONS.md #7).
+2. ~~Create a **List** for the founding waitlist~~ — done: List ID **`VUATXv`**.
+3. ~~Create a **Private API key**~~ — done: custom key scoped to **List + Profiles + Subscriptions** (full access), nothing else.
+4. **Opt-in mode:** double opt-in (Klaviyo default; the page's success copy assumes it). The confirmation email is sent from the branded sending domain **`send.pardnerboots.com`** (verified + activated in Klaviyo → Settings → Email → Domains) — without it, confirmations land in spam. Switch the list to single opt-in only if confirmation rates look weak with real traffic; that also means changing the success message in `index.html`.
 
-## Environment variables (set in Netlify → Site → Environment variables)
+**Testing signups:** use real, distinct mailboxes. Klaviyo auto-suppresses plus-addressed emails (`you+test@…`) at profile creation ("User Suppressed"), and suppressed profiles never receive the opt-in confirmation.
+
+## Environment variables — set in Netlify (done)
 
 ```
-KLAVIYO_PRIVATE_API_KEY = pk_xxxxxxxxxxxxxxxxxxxxxxxx
-KLAVIYO_LIST_ID         = Y6nRLr
+KLAVIYO_PRIVATE_API_KEY = pk_xxxxxxxxxxxxxxxxxxxxxxxx   (marked "secret" in Netlify)
+KLAVIYO_LIST_ID         = VUATXv
 ```
 
-The private key lives only in the function's environment — it is never exposed to the browser. That's the whole reason the call is routed through the function instead of made from the page.
+The private key lives only in the function's environment — it is never exposed to the browser. That's the whole reason the call is routed through the function instead of made from the page. Because the key is flagged secret, Netlify's UI/CLI can't read it back (and `netlify dev` won't pull it down) — for local testing put both vars in a local `.env`. Note: env-var changes don't reach already-deployed functions; trigger a redeploy after editing them.
 
 ## Run locally
 
@@ -43,13 +45,13 @@ netlify dev        # serves page + function at http://localhost:8888
 
 Set the two env vars locally first (`netlify env:set …`, or a `.env` file that Netlify CLI reads). Submitting the form will create a real profile in your Klaviyo account, so use a test list.
 
-## Deploy
+## Deploy — done (live at [pardnerboots.com](https://pardnerboots.com))
 
-1. Push this folder to a Git repo.
-2. In Netlify: **Add new site → Import from Git**, pick the repo.
-3. Build settings: no build command; publish directory `.`; functions directory `netlify/functions` (already in `netlify.toml`).
-4. Add the two environment variables.
-5. Deploy, then point your domain at the site.
+Deployed 2026-07-08 from `github.com/upsmancsr/pardner-boots` to a separate
+Pardner Boots Netlify account (site: `pardner-boots.netlify.app`). Netlify
+auto-deploys every push to `main` — no build command; **base directory
+`boot-waitlist`** (the one setting that matters, since this folder isn't the
+repo root; publish and functions dirs then come from `netlify.toml`).
 
 ## What lands in Klaviyo per signup
 

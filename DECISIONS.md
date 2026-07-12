@@ -5,7 +5,7 @@ this as calls are made so future sessions start oriented. When a locked decision
 changes, don't delete it — move it down to a "Superseded" note with the date and
 reason.
 
-_Last updated: 2026-07-08_
+_Last updated: 2026-07-09_
 
 ---
 
@@ -53,19 +53,34 @@ _Last updated: 2026-07-08_
   margin). Framework exists in the Execution Packet; the *decision* waits on real
   quotes from the diagnostic sprint. Dedicated session once quotes land.
 
-- **Welcome email flow for the waitlist.** Not built yet. A list-join welcome
-  flow in Klaviyo (confirm → what to expect → founding-price promise). Design and
-  build when we turn to lifecycle email.
+- **Welcome email flow for the waitlist.** Not built yet — now unblocked (the
+  page is live and collecting). A list-join welcome flow in Klaviyo (confirm →
+  what to expect → founding-price promise). Design and build when we turn to
+  lifecycle email; worth doing within the first weeks of real signups.
 
-- **Klaviyo account — create at deploy time.** Stand up a *separate* Pardner Boots
-  Klaviyo account (not a list in Mandala Scrubs) before the page goes public —
-  need List ID, a Private API key (Profiles + Lists + Subscriptions write), and a
-  verified sender for double opt-in. Any signup before this exists is lost, not
-  queued.
+- **GA4 analytics — on hold (2026-07-09).** The code hook is shipped
+  (`GA_MEASUREMENT_ID` in `boot-waitlist/main.js`; empty string = fully
+  disabled). To finish: create a GA4 property in the *Pardner* Google account,
+  paste the `G-` ID, register the `headline_variant` custom dimension. Until
+  then the headline A/B has conversion mix (Klaviyo) but not conversion rate.
+
+### Resolved
+
+- **Klaviyo account** — *resolved 2026-07-08.* Separate Pardner Boots Klaviyo
+  account is live: founding-waitlist list **`VUATXv`**; scoped private API key
+  (List + Profiles + Subscriptions write only) set in Netlify env (marked
+  secret); branded sending domain **send.pardnerboots.com** verified and
+  activated, so double-opt-in confirmations land in the inbox. End-to-end
+  verified with a real signup through the live form. Testing gotcha: Klaviyo
+  auto-suppresses plus-addressed test emails (`foo+test@…`) at profile
+  creation — test with real, distinct mailboxes.
 
 ---
 
 ## Reference
 
 - Product briefs and the developer RFP: [`docs/`](docs/)
-- Waitlist landing page: [`boot-waitlist/`](boot-waitlist/)
+- Waitlist landing page: [`boot-waitlist/`](boot-waitlist/) — **live at
+  [pardnerboots.com](https://pardnerboots.com)** since 2026-07-08; Netlify
+  auto-deploys from `main` (base directory `boot-waitlist`). DNS at GoDaddy —
+  additive records only, never a nameserver switch (email MX lives there).

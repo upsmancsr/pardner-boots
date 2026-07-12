@@ -12,7 +12,7 @@ founding-waitlist landing page.
 |---|---|
 | [`DECISIONS.md`](DECISIONS.md) | Locked decisions + open threads. **Start here.** |
 | [`docs/`](docs/) | Founder Product Brief, Technical Fit Brief, Execution Packet, and the Footwear Developer RFP (`.docx`). |
-| [`boot-waitlist/`](boot-waitlist/) | Static waitlist landing page (Netlify) that writes signups into Klaviyo. |
+| [`boot-waitlist/`](boot-waitlist/) | Waitlist landing page — **live at [pardnerboots.com](https://pardnerboots.com)**. Static page (Netlify) that writes signups into Klaviyo. |
 
 ## The docs
 
@@ -25,8 +25,11 @@ founding-waitlist landing page.
 
 ## The waitlist page
 
-See [`boot-waitlist/README.md`](boot-waitlist/README.md) for setup, Klaviyo
-config, and deploy steps. To preview locally:
+**Live at [pardnerboots.com](https://pardnerboots.com)** — Netlify auto-deploys
+from `main` (base directory `boot-waitlist`), and signups flow into the
+Pardner Boots Klaviyo account with double opt-in. See
+[`boot-waitlist/README.md`](boot-waitlist/README.md) for the setup record,
+Klaviyo config, and the A/B-test measurement notes. To preview locally:
 
 ```
 cd boot-waitlist
