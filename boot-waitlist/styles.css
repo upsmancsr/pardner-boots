@@ -726,6 +726,13 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
   padding: 1.8rem 2rem;
   margin: 2.6rem 0 0;
 }
+.signature {
+  font-family: var(--hand);
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  line-height: 1;
+  color: var(--ink);
+  margin: 1.4rem 0 0;
+}
 
 /* ---- founding band (olive block) ---- */
 .band { background: var(--olive); color: var(--cream); text-align: center; }
