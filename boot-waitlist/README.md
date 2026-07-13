@@ -15,7 +15,7 @@ netlify.toml          Netlify config
 
 - ~~**Brand name**~~ — done: set to **Pardner Boots** (nav, footer, `<title>`, and the `styles.css` header). Use bare "Pardner" only where in-sentence context calls for it.
 - ~~**Hero render**~~ — done: `hero.jpg` (tall-shaft caramel boot) in the hero, `toe-box.jpg` (top-down) in the fix section.
-- ~~**Contact email**~~ — done: the error message in `main.js` (`showError`) links to **cameron@pardnerboots.com**.
+- ~~**Contact email**~~ — done: the error message in `main.js` (`showError`) links to **howdy@pardnerboots.com**.
 - ~~**Domain**~~ — done: `pardnerboots.com` (A `@` → `75.2.60.5`, CNAME `www` → `pardner-boots.netlify.app` at GoDaddy). **DNS stays at GoDaddy, additive records only** — email MX and Klaviyo sending-domain records live there; never switch nameservers.
 
 ## Klaviyo setup (one-time) — done 2026-07-08

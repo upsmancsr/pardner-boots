@@ -112,7 +112,7 @@ function showError() {
     note = document.createElement("p");
     note.id = "form-error";
     note.style.cssText = "color:#a23b2c;font-size:0.9rem;text-align:center;margin:0.8rem 0 0";
-    note.innerHTML = "That didn\u2019t go through. Try again in a moment \u2014 or email <a href=\"mailto:cameron@pardnerboots.com\">cameron@pardnerboots.com</a> and we\u2019ll add you by hand.";
+    note.innerHTML = "That didn\u2019t go through. Try again in a moment \u2014 or email <a href=\"mailto:howdy@pardnerboots.com\">howdy@pardnerboots.com</a> and we\u2019ll add you by hand.";
     btn.insertAdjacentElement("afterend", note);
   }
 }
