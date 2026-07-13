@@ -116,7 +116,6 @@
         <p class="subhead">Every bit the cowboy boot, none of the pinch &mdash; shaped to a kid's real foot, not just a miniature adult boot.</p>
         <div class="hero-cta">
           <a href="#join" class="btn btn-primary">Join the founding batch <span class="arrow">&rarr;</span></a>
-          <span class="hero-price">$118 &middot; <strong>$98 founding price</strong></span>
         </div>
       </div>
       <div class="hero-art">
@@ -256,7 +255,7 @@
       <div class="join-head">
         <p class="eyebrow">The founding batch is open</p>
         <h2>Join the <span class="felt">founding batch</span>.</h2>
-        <p class="join-sub">We&rsquo;re making our very first run, and we&rsquo;d love you in it &mdash; first-look photos, the $98 founding price, and a real say in the fit before we build.</p>
+        <p class="join-sub">We&rsquo;re making our very first run, and we&rsquo;d love you in it &mdash; first-look photos, a preorder link before anyone else, and a real say in the fit while we build.</p>
       </div>
 
       <form id="join-form" novalidate>
@@ -282,14 +281,17 @@
         </div>
 
         <div class="field">
-          <label for="price_intent">If it fits and looks great, what feels fair?</label>
+          <label for="price_intent">If it fits and looks great, what feels fair to pay?</label>
           <select id="price_intent" name="price_intent" required>
-            <option value="" disabled selected>Choose one</option>
-            <option value="$98">Around $98</option>
-            <option value="$118">Around $118</option>
-            <option value="More than $118">More than $118</option>
+            <option value="" disabled selected>Select a range</option>
+            <option value="Under $80">Under $80</option>
+            <option value="$80&ndash;$100">$80&ndash;$100</option>
+            <option value="$100&ndash;$120">$100&ndash;$120</option>
+            <option value="$120&ndash;$140">$120&ndash;$140</option>
+            <option value="More than $140">More than $140</option>
             <option value="Not sure">Not sure yet</option>
           </select>
+          <p class="hint">This just helps us price the first batch fairly.</p>
         </div>
 
         <fieldset class="field">
@@ -310,7 +312,7 @@
       <div class="join-success" id="join-success" hidden>
         <div class="check" aria-hidden="true"></div>
         <h3>You&rsquo;re in, pardner!</h3>
-        <p>Check your inbox to confirm &mdash; that&rsquo;s where the first look and your founding price will land.</p>
+        <p>Check your inbox to confirm &mdash; you&rsquo;ll get a special preorder link before anyone else.</p>
       </div>
     </div>
   </section>
