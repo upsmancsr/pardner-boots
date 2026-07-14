@@ -88,6 +88,12 @@ img { max-width: 100%; display: block; }
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
+/* In headings, keep the emphasized phrase (and its felt underline) together on
+   one line so the underline never splits across a wrap. Body emphasis still wraps. */
+h1 .felt,
+h2 .felt {
+  white-space: nowrap;
+}
 
 /* ---- buttons ---- */
 .btn {
@@ -558,7 +564,7 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
 /* mobile: stack the panel below the boot */
 @media (max-width: 720px) {
   .showcase-sticky { justify-content: flex-start; padding-top: clamp(4rem, 10vh, 5rem); gap: 1rem; }
-  .showcase-intro h2 { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .showcase-intro h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); }
   .showcase-main { flex-direction: column; gap: 2rem; }
   .showcase-stage { width: min(78vw, 34vh, 320px); }
   .showcase-panel { width: auto; max-width: 86vw; text-align: center; }
