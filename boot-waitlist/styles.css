@@ -439,7 +439,8 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
 }
 
 /* room to wiggle — happy blue block with warm kid copy */
-.wiggle { background: var(--sky); text-align: center; }
+/* no section top padding — the pinned .showcase-sticky supplies the top spacing (matches other sections) */
+.wiggle { background: var(--sky); text-align: center; padding-top: 0; }
 .wiggle .section-inner { max-width: 860px; }
 .wiggle .eyebrow { color: var(--orange-deep); }
 /* showcase intro header uses the shared .section-title / .section-sub treatment */
