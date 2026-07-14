@@ -442,8 +442,7 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
 .wiggle { background: var(--sky); text-align: center; }
 .wiggle .section-inner { max-width: 860px; }
 .wiggle .eyebrow { color: var(--orange-deep); }
-.wiggle h2 { font-size: clamp(1.9rem, 4.5vw, 3rem); font-weight: 400; color: var(--ink); margin-bottom: 1rem; }
-.wiggle p { color: var(--ink); margin: 0 auto; max-width: 62ch; }
+/* showcase intro header uses the shared .section-title / .section-sub treatment */
 
 /* ---- scrolly boot showcase (pinned boot + pop-in callouts) ---- */
 .showcase-track { position: relative; }
@@ -701,8 +700,7 @@ body.drawer-open .drawer-scrim { opacity: 1; pointer-events: auto; }
 /* ---- our story teaser (yellow block) ---- */
 .story-teaser { background: var(--yellow); text-align: center; }
 .story-teaser .section-inner { max-width: 720px; }
-.story-teaser h2 { font-size: clamp(1.9rem, 4.2vw, 3rem); font-weight: 400; line-height: 1.12; margin-bottom: 1rem; }
-.story-teaser p { font-family: var(--mono); font-size: 1.02rem; line-height: 1.55; color: var(--ink-soft); margin: 1rem auto 2rem; max-width: 52ch; }
+/* header uses the shared .section-title / .section-sub treatment (matches "What's different") */
 
 /* ---- our story page ---- */
 .page-hero {
